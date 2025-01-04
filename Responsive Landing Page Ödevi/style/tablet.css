@@ -1,0 +1,143 @@
+nav{
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    
+}
+nav ul{
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff4040;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background-color: #555;
+}
+.textbox1{
+    flex-direction: column;
+    -ms-flex-align: center;
+    text-align: center;
+    margin-left: 340px;
+    margin-right: 340px;
+    width: 300px;
+    height: 300px;
+}
+.imgbox{
+    margin-top: 40px;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: 300px;
+    height: 226px;
+}
+.about{
+    flex-direction: column;
+    font-size: 16px;
+    width: 70%;
+
+}
+
+.about h2, p{
+    margin: 10px 0;
+}
+.about p{
+    margin: 0px auto;
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+.course{
+    max-width: 60%;
+    display:flex;
+    align-items: center;
+}
+.course-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 25px 25px;
+    filter: grayscale(1);
+    transition: all 1s ease;
+    
+}
+.course-img:hover{
+    filter: grayscale(0);
+}
+.course-desc{
+    text-align: justify;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+ 
+
+    padding: 25px 0;
+}
+.course-header{
+    color: #ff4040;
+}
+
+.btn{
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+
+
+    text-align: center;
+    text-decoration: none;    
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.btn-orange{
+    background-color: #ff4040;
+    color: white;
+}
+.btn-orange:hover{
+    background-color: #ff8040;
+    border-radius: 25px;
+}
+.btn-green{
+    background-color: olive;
+    color: white;
+}
+.btn-green:hover{
+    background-color: olivedrab;
+    border-radius: 25px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.form input{
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.form textarea{
+    height: 100px;
+    border-radius: 10px;
+    margin: 15px 0;
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-size-adjust: 20%;
+    width:400;
+    height: 70px;
+}
+nav ul{
+    list-style: none;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff4040;
+    padding: 0.3px 5px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background-color: #555;
+}
+.textbox1{
+    flex-direction: column;
+    text-align: center;
+
+    width: 300px;
+    height: 300px;
+}
+.imgbox{
+    margin-top: 40px;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: 300px;
+    height: 226px;
+}
+.about{
+    flex-direction: column;
+    font-size: 16px;
+    width: 70%;
+
+}
+.about h2, p{
+    align-content: baseline;
+    margin: 10px 10px;
+}
+.course{
+    align-content: space-between ;
+    flex-direction: column;
+    display: flex;
+    border: 300px 500px;
+}
+.headline-2{
+    margin-top: 14px;
+    text-align: center;
+    flex: content;
+    flex-direction: column;
+    
+}
+.course-img{
+    margin: 20px;
+    height: 60%;
+    display:flex;
+    align-content: center;
+    border-radius: 25px;
+    filter: grayscale(1);
+    transition: all 1s ease;
+}
+.course-img:hover{
+    filter: grayscale(0);
+}
+.course-desc{
+    width: 350px;
+    height: 350px;
+    text-align:justify;
+    padding: 0px 20px;
+}
+.course-header{
+    text-align: center;
+    color: #ff4040;
+}
+
+
+.btn{
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;    
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.btn-orange{
+    background-color: #ff4040;
+    color: white;
+}
+.btn-orange:hover{
+    background-color: #ff8040;
+    border-radius: 25px;
+}
+.btn-green{
+    background-color: olive;
+    color: white;
+}
+.btn-green:hover{
+    background-color: olivedrab;
+    border-radius: 25px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 2px;;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+    
+}
+.form input{
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.form textarea{
+    height: 100px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
