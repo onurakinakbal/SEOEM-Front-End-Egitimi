@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img{
+            margin: 0px 0px;
+        }
+        #img-l{
+            margin: 100px auto;
+            margin-bottom: 20px;
+            display: block;
+        }        
+        .button-1{
+            text-align: center;
+            vertical-align: bottom;        
+        }
+        .button-1 :hover{
+            background-color: ##dfdfdf;
+        }
+        .button-2{
+            text-align: center;
+            vertical-align: top;
+            font-size: 13px;
+            line-height: normal;
+            background color: silver; 
+            box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+            border: none;
+            border-radius: 0;
+            width: 240px; 
+            align-self: center;
+        }
+        .button-2 :hover{
+            background-color: blue;
+        }
+        .container1{
+            background-color: rgb(210, 206, 206);
+            width: 70%;
+            height: 25%;
+            margin: 150px auto;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            min-height: 150px;
+            min-width: 100px;
+            justify-content: space-around;
+        }
+        .container2{
+            width: 100%;
+            height: 25%;
+            margin: 150px auto;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding-top: 0px;
+            min-height: 150px;
+            min-width: 100px;
+        }
+        .box{
+            width: 70%;
+            margin: 150px auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            min-height: 150px;
+            min-width: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-1{
+            font-size: small;
+            background-color: aquamarine;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-grow: 7;
+        }
+        .box-2{
+            font-size: small;
+            background-color: turquoise;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-grow: 3;
+        }
+        .box-3{
+            font-size: small;
+            background-color: teal;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-grow: 8;
+        }
+        .input{
+            height: 16px;
+            width: 240px;
+            text-align: center;
+            align-self: center;
+            border-radius: 5px;
+            margin: 4px;
+            padding: 0 15px;
+        }
+        .input2{
+            display: block;
+            text-align: center;
+            align-self: center;
+            height: 25px;
+            width: 49%;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="29 Ara 2024, 12_32.png" alt="Google" class="img" id="img-l">
+    </div>
+    <div class="container1">
+        <br>
+        <input class="input2" type="search" value="Search with Google">
+        <div class="button-1">
+            <button>Google Search</button>
+            <button> I'm feeling lucky</button>
+        </div>
+        
+    </div>
+    <div class="container2">
+        <div class="box">
+            <article class="box-1">
+                <a href="">Special Searches</a>
+                <a href="">Stanford Search</a>
+                <a href="">Linux Search</a>
+            </article>
+            <article class="box-2">
+                <a href="https://support.google.com/websearch/?visit_id=638719646193199379-403437466&hl=tr&rd=2#topic=3378866">Help!</a>
+                <a href="https://about.google/">About Google!</a>
+                <a href="https://abc.xyz/">Company Info</a>
+                <a href="https://doodles.google/">Google! Logos</a>
+            </article>
+            <article class="box-3">
+                    Get Google!<br>updates monthly:<br>
+                    <input class="input" name="emailaddr" value="your e-mail">
+                    <input class="button-2" type="button" name="SubmitAction" value="Subscribe">
+                     <a href="">Archive 
+            </article>
+        </div>
+    </div>
+    <div style="text-align: center;">Copyright ©1998 Google Inc.</div>
+
+</body>
+</html>
