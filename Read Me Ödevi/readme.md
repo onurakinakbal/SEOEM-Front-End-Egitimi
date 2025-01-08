@@ -27,7 +27,7 @@ In future I would like to learn Javascript, Pyscript and might be C++ (still not
 <span style="color:#DD966C;font-family: verdana;
   font-size: 300%;">
   ``
-    shrjktulyı
+    With great power, comes great responsibility! ~ Ben Parker
 ``
 </span>
 
