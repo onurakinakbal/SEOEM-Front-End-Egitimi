@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* header tipleri oluşturdum ve bazılarına hover verdim */
 .headerPrime{
     margin-left: 5px;
     font-size: xx-large;
@@ -37,6 +38,9 @@
     font-style: normal;
 
 }
+
+/* section sınıfı üzerinden p ve header elemetlerime müdehalelerde bulundum */
+
 .section p{
     color: #6c5641;
     font-size: medium;
@@ -60,9 +64,11 @@
     font-weight: 400;
     font-style: normal;
 }
+/* bir ekran uzunluğu belirlemek istedim ama istediğim sonucu alamadım. Büyük bir sıkıntı yaratmadığı için bu değişikliği olası revizelerim için kodda tuttum. (.body{})  */
 .body{
     max-height: 800px;
 }
+/* burada navı hareketli yapmak istedim ama margine vermeme rağmen bir türlü istediğim sonucu alamadım benden position'ı fixed yapmaktan vazgeçtim */
 .nav{
     background-color: #e17873;
     color: #fff;
@@ -89,6 +95,7 @@ nav ul li a{
 nav ul li a:hover{
     background-color: crimson;
 }
+/* Daha önce dediğim gibi bir ekran uzunluğu belirlemek istedim (800px) ve eğer bu uzunluğu aşarsa scroll ile kaydırabilmeyi planlıyordum. Ama ne yaptığımı bende henüz çözemedim. */
 .main{
     display: flex;
     overflow: scroll;
@@ -101,6 +108,7 @@ nav ul li a:hover{
     height: 1/3;
     text-align: justify;
 }
+/* çift aside kullanmak istedim çünkü neden olmasın, internetten aldığım js kodu ile açılır kapanır bir bölüm eklemek istedim */
 .aside1{
     background-color: #38c1a6;
     width: 25%;
@@ -122,6 +130,7 @@ nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+/* burada resimlere bi büyüme efekti verdimki müşteriler ürünlerin özelliklerini üzerlerine gelerek inceleyebilsinler */
 .img{
     display: flex;
     flex-direction: column;

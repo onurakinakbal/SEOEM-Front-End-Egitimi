@@ -1,3 +1,4 @@
+// bu kodu "https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp" adresinden aldım ve yeniden düzenleyip bölüm saklamak üzere kullandım. js'im yetmediği için bir sürü açık oldu ister istemez
 function myFuncWing() {
     var x = document.getElementById("noNeos");
     if (x.style.display === "none") {

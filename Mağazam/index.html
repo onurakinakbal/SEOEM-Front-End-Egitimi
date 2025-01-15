@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <!-- google'dan font çektim -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&family=Rubik+Distressed&family=Rubik+Vinyl&display=swap" rel="stylesheet">
@@ -23,6 +24,7 @@
         }
     </style>
 </head>
+<!-- internetteki kaynakların birinde nav'ın header'ın içine alındığı bir kaynak gördüm denemek istedim -->
 <body class="body">
     <header>
         <nav class="nav">
@@ -41,7 +43,8 @@
             
         </nav> 
     </header>
-
+<!-- Nav'ın ardından main--footer--js olarak gittim. Semantic kodlamaya olabildiğince uymaya çalıştım ve main in içine article ve aside serpiştirdim. 
+ Tabii bunları yeniden kendi içinde düzenleyip sectionlar oluşturup figür ve paragraf ekledim. -->
     <main class="main">
         <aside class="aside1" id="noNeos">
             <h3 class="headerSeconder">Neos Core</h3> 
@@ -71,6 +74,7 @@
                 <img class="img" src="aquaDolphin.jpg" alt="Neo-Spacian Aqua Dolphin">
                 <caption>Neo-Spacian Aqua Dolphin 50₺</caption>
         </aside>
+        <!-- alt'ları doldurmaya özen gösterdim, bu sanırım site arandığında anahtar kelime işlevi görüp (?) sitenin daha çok ön plana çıkmasını sağlıyor -->
         <article class="article" style="width: 50%;">
             <section class="section">
                 <header>Yeni Ürünler Geldi!</header>
@@ -78,6 +82,7 @@
                 <figure style="text-align:center">
                     <img style="max-width: 49%; display:inline-block" class="img" src="" id="image"  alt="Elemental Hero Burstinatrix">
                     </br>
+                    <!-- burada bir başka js kodu kullanıp son çıkan ürünüm daha çok ilgi çeksin diye efekt ekledim -->
                     <caption >Elemental Hero Burstinatrix</caption>
                 </figure>
                 <p>İki efsanevi güç bir araya geldi!! İşte Neos ve Wingman'ın güçlerinin birleşiminden doğan yeni bir güç !!!</p>
@@ -175,4 +180,5 @@
             }, 850);
     </script>
 </body>
+<!-- her ne kadar metinlerim kanser olsada içime sinen bir çalışma oldu. ilerleyen zamanlarda biraz daha üzerine çalışmayı düşünüyorum.  -->
 </html>
