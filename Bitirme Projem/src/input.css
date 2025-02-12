@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@theme{
+    --color-primary-light:#c19e3d;
+    --color-primary-dark:#719943;
+    --color-secondary-light:#b84c7d;
+    --color-secondary-dark:#7f63b8;
+    --color-accent-light:#b39553;
+    --color-accent-dark:#4cc490; 
+}
+@layer base{
+    h2{
+        @apply bg-primary-dark text-secondary-dark dark: text-accent-light text-center text-l
+    }
+    nav{
+        @apply bg-accent-light brightness-110 text-accent-dark 
+    }
+    div{
+        @apply flex max-w-50% justify-center
+    }
+    p{
+        @apply text-justify
+    }
+    img{
+        @apply float-right
+    }
+}
+.level{
+    @apply bg-secondary-light text-white 
+}
+.btn{
+    @apply bg-primary-light text-white px-4 py-2 rounded-none transition-all duration-60 
+}
+.btn:hover{
+    @apply bg-primary-dark rounded-full
+}
