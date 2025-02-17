@@ -1,31 +1,43 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @theme{
-    --color-primary-light:#c19e3d;
-    --color-primary-dark:#719943;
-    --color-secondary-light:#b84c7d;
-    --color-secondary-dark:#7f63b8;
-    --color-accent-light:#b39553;
-    --color-accent-dark:#4cc490; 
+    --color-primary-light:#b173ea;
+    --color-primary-dark:#e29226;
 }
 @layer base{
-    h2{
-        @apply bg-primary-dark text-secondary-dark dark: text-accent-light text-center text-l
+    h1{
+        @apply font-extrabold
     }
     nav{
-        @apply bg-accent-light brightness-110 text-accent-dark 
+        @apply bg-primary-light
     }
     div{
-        @apply flex max-w-50% justify-center
+        @apply flex justify-center
+    }
+    h3{
+        @apply text-center
     }
     p{
         @apply text-justify
     }
-    img{
-        @apply float-right
+    figure{
+        @apply box-content mx-8 lg:box-border float-right
     }
 }
+.level-2{
+    @apply overflow-auto
+}
 .level{
-    @apply bg-secondary-light text-white 
+    @apply min-h-screen block bg-primary-dark text-white 
+}
+.level h2{
+    @apply sticky
+}
+.headline{
+    @apply bg-primary-light text-black font-semibold text-center
+}
+.info{
+    @apply inline-flex float-right
 }
 .btn{
     @apply bg-primary-light text-white px-4 py-2 rounded-none transition-all duration-60 

@@ -9,7 +9,7 @@
         <link href="/src/output.css" rel="stylesheet">
         <title>Curriculum Vitae (CV)</title>
     </head>
-    <body class=".dark">
+    <body>
         <aside>
             <header>
                 <nav class="max-h-16 flex items-center justify-around">
@@ -21,51 +21,41 @@
                         <li><a href="#scientific">SCIENTIFIC</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
-                    <button id="theme-switcher" class="hover:scale-125 inline-block transition-all ease-linear delay-75">
-                        <span class="dark:hidden text-2xl text-dark-100 ">
-                            <i class="fa-solid fa-moon"></i>
-                        </span>
-                        <span class="hidden dark:inline text-2xl text-light-100">
-                            <i class="fa-solid fa-sun"></i>
-                        </span>
-                    </button>
-                      
                 </nav>
             </header>
         </aside>
         <main>
+            <hr>
+            <h2 class="headline" id="about">ABOUT</h2>
+            <hr>
             <div class="level" id="level-1">
-                <hr>
-                <h2 id="about">ABOUT</h2>
-                <hr>
-                <aside class="info">
-                    <figure>
-                        <img src="content/profile.jpg" alt="Profile Photo" width="200px">
-                        <figcaption>
-                            NAME: Onur Akın
-                            <br>
-                            SURNAME: Akbal
-                            <br>
-                            FACULTY AND DEPARTMENT: Science & Art Faculty – Chemistry Programme
-                            <br>
-                            DEGREE: Undergraduated Student
-                            <br>
-                        </figcaption>
-                    </figure>
-                </aside>
-                <article>
-                    <p>
-                        Hello, my name is Onur Akın Akbal. I graduated from Dr. Kemal Naci Ekşi Anatolian High School in 2019. I am currently continuing my education life as a senior student in the Department of Chemistry at Yıldız Technical University Davutpaşa Campus. During this time, I had the chance to take part in many teams, including YTU Astronomy Club, YTU Space Physics Research Group, YTU Eren Research Group and Aksuvital Quality-Control Team. At YTU Astronomy Club, I took part in HORIZON Project, KATAY team and other coordinatorships. In these period, I gained valuable experience on the construction of mirror telescopes and earthquake research. After the KATAY project, I participated in Space Physics Research and participated in various scientific activities. During my thesis process, I studied the functionalization and antibacterial properties of chitosan biopolymer in Eren Research Group. I am still continuing my studies in these two teams. In addition, last summer, I completed my compulsory internship as a chemistry intern in the quality control team at Aksuvital. During this internship, I had the opportunity to work with instrumental tools such as HPLC, FTIR, GC, UV and AAS and gained new valuable knowledge about GMP and pharmacopoeia. In the upcoming periods, I aim to take new steps to improve myself in my career, especially in the field of chemistry after graduation. My working interests are polymers, quality-control, software, and my hobbies are amateur astronomy, physics, biology, PC games, TCG card games, cooking and learning new things. To get to know me better:
+                <article class="inline-flex w-3/5">
+                    <p class="float-left">
+                        Hello, my name is Onur Akın Akbal. I graduated from Dr. Kemal Naci Ekşi Anatolian High School in 2019. I am currently continuing my education life as a senior student in the Department of Chemistry at Yıldız Technical University Davutpaşa Campus. During this time, I had the chance to take part in many teams, including YTU Astronomy Club, YTU Space Physics Research Group, YTU Eren Research Group and Aksuvital Quality-Control Team. At YTU Astronomy Club, I took part in HORIZON Project, KATAY team and other coordinatorships. In these period, I gained valuable experience on the construction of mirror telescopes and earthquake research. After the KATAY project, I participated in Space Physics Research and participated in various scientific activities. During my thesis process, I studied the functionalization and antibacterial properties of chitosan biopolymer in Eren Research Group. I am still continuing my studies in these two teams. In addition, last summer, I completed my compulsory internship as a chemistry intern in the quality control team at Aksuvital. During this internship, I had the opportunity to work with instrumental tools such as HPLC, FTIR, GC, UV and AAS and gained new valuable knowledge about GMP and pharmacopoeia. In the upcoming periods, I aim to take new steps to improve myself in my career, especially in the field of chemistry after graduation. My working interests are polymers, quality-control, software, and my hobbies are amateur astronomy, physics, biology, PC games, TCG card games, cooking and learning new things.
+                        <br><br>
+                        To get to know me better:
+                        <a href="" target="_blank">Here is my personal site! </a>
                     </p>
+                    <br>
                 </article>
-                <section>
-                    <a href="" target="_blank">Here is my personal site! </a>
-                </section>
+                <figure class="inline-block w-1/4">
+                    <img src="content/profile.jpg" alt="Profile Photo" width="200px">
+                    <figcaption>
+                        NAME: Onur Akın
+                        <br>
+                        SURNAME: Akbal
+                        <br>
+                        FACULTY AND DEPARTMENT: Science & Art Faculty – Chemistry Programme
+                        <br>
+                        DEGREE: Undergraduated Student
+                        <br>
+                    </figcaption>
+                </figure>
             </div>
 
             <div class="level" id="level-2">
                 <hr>
-                <h2 id="education">EDUCATION AND CERTIFICATES</h2>
+                <h2 class="headline" id="education">EDUCATION AND CERTIFICATES</h2>
                 <hr>
                 <section>
                     <ol>
@@ -82,8 +72,8 @@
                 </section>
                 <section id="certificate">
                     <h3>CERTIFICATES</h3>
-                    <ul class="flex justify-center space-around">
-                        <div class="columns-1 w-2/9">
+                    <ul class="flex space-around">
+                        <div>
                             <h4>Lab Akademi</h4>
                             <br>
                             <li>High Performance Liquid Chromatography (HPLC) Basic User Training</li>
@@ -115,7 +105,7 @@
                             <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=6327331294OA" target="_blank">Verify</a></button>
                             <br><br>
                         </div>
-                        <div class="columns-1 w-2/9">
+                        <div>
                             <h4>Bilgeİş</h4>
                             <br>
                             <li>Python Programming - 1 </li>
@@ -131,7 +121,7 @@
                             <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=da5401a0-3579-11ef-b029-0dbc69cfd157" target="_blank">Verify</a></button>
                             <br><br>
                         </div>
-                        <div class="columns-1 w-2/9">
+                        <div>
                             <h4>Turkish Physics Society</h4>
                             <br>
                             <li>Certificate of Attendance Turkish Physical Society 39<sup>th</sup> International Physics Congress</li>
@@ -139,7 +129,7 @@
                             <button class="btn"><a href="https://drive.google.com/file/d/1dDqZz710kPO4KtSuEVqnnomrihoJ7PR3/view?usp=drive_link" target="_blank">Verify</a></button>
                             <br><br>
                         </div>
-                        <div class="columns-1 w-2/9">
+                        <div>
                             <h4>IUGEN - Istanbul University Genetics Club</h4>
                             <br>
                             <li>Certificate of Attendance 19<sup>th</sup> International Molecular Biology and Genetics Winter School</li>
@@ -152,7 +142,7 @@
             </div>
             <div class="level" id="level-3">
                 <hr>
-                <h2 id="experiences">EXPERIENCES</h2>
+                <h2 class="headline" id="experiences">EXPERIENCES</h2>
                 <hr>
                 <section>
                     <h3>INTERNSHIP</h3>
@@ -250,7 +240,7 @@
             </div>
             <div class="level" id="level-4">
                 <hr>
-                <h2 id="scientific">SCIENTIFIC ACTIVITIES </h2>
+                <h2 class="headline" id="scientific">SCIENTIFIC ACTIVITIES </h2>
                 <hr>
                 <h3>PROJECTS</h3>
                 <section>
@@ -300,7 +290,7 @@
             </div>
             <div class="level" id="level-5">
                 <hr>
-                <h2 id="contact">CONTACT AND THE OTHER LINKS</h2>
+                <h2 class="headline" id="contact">CONTACT AND THE OTHER LINKS</h2>
                 <hr>
                 <blockquote>
                     <h4>E-Mails</h4>
@@ -345,15 +335,6 @@
 
         </main>
         <script>
-            document.addEventListener('DOMContentLoaded', ()=>{
-                const body = document.body;
-                const button = document.querySelector('#theme-switcher');
-    
-                button.addEventListener('click', ()=>{
-                    body.classList.toggle('dark');
-                })
-            })
-    
         </script>
     </body>
 </html>
