@@ -9,39 +9,58 @@
         @apply font-extrabold
     }
     nav{
-        @apply bg-primary-light
+        @apply bg-primary-light sticky top-0 min-w-screen
     }
     div{
-        @apply flex justify-center
+        @apply flex justify-center m-auto
+    }
+    ol{
+        @apply block
+    }
+    ul{
+        @apply block
+    }
+    li{
+        @apply block
     }
     h3{
         @apply text-center
     }
     p{
-        @apply text-justify
+        @apply p-8 text-justify
     }
     figure{
-        @apply box-content mx-8 lg:box-border float-right
+        @apply box-content mx-8 p-8 lg:box-border float-right
     }
 }
-.level-2{
-    @apply overflow-auto
-}
+
 .level{
-    @apply min-h-screen block bg-primary-dark text-white 
+    @apply min-h-screen block p-8 bg-primary-dark text-black
 }
-.level h2{
-    @apply sticky
+#level-1{
+    @apply sticky top-0
+}
+#level-2{
+    @apply sticky top-0
+}
+#level-3{
+    @apply sticky top-0
+}
+#level-4{
+    @apply sticky top-0 block
+}
+#level-5{
+    @apply sticky top-0
+}
+#form{
+    @apply justify-center
 }
 .headline{
-    @apply bg-primary-light text-black font-semibold text-center
-}
-.info{
-    @apply inline-flex float-right
+    @apply bg-primary-light text-white font-bold min-h-2.5 min-w-full text-center
 }
 .btn{
-    @apply bg-primary-light text-white px-4 py-2 rounded-none transition-all duration-60 
+    @apply bg-primary-light text-white px-2 py-2 h-fit w-fit rounded-lg transition-all duration-60 
 }
 .btn:hover{
-    @apply bg-primary-dark rounded-full
+    @apply bg-primary-light brightness-125 rounded-full
 }
