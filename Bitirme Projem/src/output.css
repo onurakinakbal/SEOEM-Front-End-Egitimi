@@ -550,6 +550,9 @@
   .columns-3 {
     columns: 3;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-row {
     flex-direction: row;
   }
@@ -565,12 +568,24 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .overscroll-auto {
+    overscroll-behavior: auto;
+  }
+  .overscroll-contain {
+    overscroll-behavior: contain;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -583,6 +598,16 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .md\:overscroll-contain {
+    @media (width >= 48rem) {
+      overscroll-behavior: contain;
+    }
+  }
   .dark\:border-gray-600 {
     &:where(.dark, .dark *) {
       border-color: var(--color-gray-600);
@@ -591,6 +616,11 @@
   .dark\:border-gray-700 {
     &:where(.dark, .dark *) {
       border-color: var(--color-gray-700);
+    }
+  }
+  .dark\:bg-gray-700 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-700);
     }
   }
 }
@@ -621,10 +651,16 @@
   }
   h3 {
     text-align: center;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   p {
     padding: calc(var(--spacing) * 8);
     text-align: justify;
+  }
+  span {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   figure {
     float: right;
@@ -634,6 +670,9 @@
     @media (width >= 64rem) {
       box-sizing: border-box;
     }
+  }
+  section {
+    overflow-y: auto;
   }
 }
 .level {
@@ -658,14 +697,13 @@
 #level-4 {
   position: sticky;
   top: calc(var(--spacing) * 0);
-  display: block;
 }
 #level-5 {
   position: sticky;
   top: calc(var(--spacing) * 0);
 }
 #form {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .headline {
   min-height: calc(var(--spacing) * 2.5);
@@ -679,6 +717,7 @@
 .btn {
   height: fit-content;
   width: fit-content;
+  flex-direction: row;
   border-radius: var(--radius-lg);
   background-color: var(--color-primary-light);
   padding-inline: calc(var(--spacing) * 2);

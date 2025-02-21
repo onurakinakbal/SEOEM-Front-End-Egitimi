@@ -9,17 +9,17 @@
         <link href="/src/output.css" rel="stylesheet">
         <title>Curriculum Vitae (CV)</title>
     </head>
-    <body>
+    <body class="bg-gray-100 dark:bg-gray-700">
         <aside>
             <header>
                 <nav class="max-h-16 flex items-center justify-around">
                     <h1 class=" text-3xl font-bold"><a href="#" >CV</a></h1>
                     <ul class="flex flex-row gap-4">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#education">EDUCATION</a></li>
-                        <li><a href="#experiences">EXPERIENCES</li>
-                        <li><a href="#scientific">SCIENTIFIC</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a class="transition-all" href="#about">ABOUT</a></li>
+                        <li><a class="transition-all" href="#education">EDUCATION</a></li>
+                        <li><a class="transition-all" href="#experiences">EXPERIENCES</a></li>
+                        <li><a class="transition-all" href="#scientific">SCIENTIFIC</a></li>
+                        <li><a class="transition-all" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>
@@ -49,6 +49,19 @@
                         <br>
                         DEGREE: Undergraduated Student
                         <br>
+                        <section>
+                            <ol>
+                                <h3>EDUCATION</h3>
+                                
+                                <li>Dr. Kemal Naci Ekşi Anatolian High School <a href="https://nacieksianadolulisesi.meb.k12.tr/" target="_blank">(see)</a></li>
+                                <li>Yıldız Technical University <a href="https://yildiz.edu.tr/" target="_blank">(see)</a><br><a href="https://kml.yildiz.edu.tr/" target="_blank">Chemistry Program</a></li>
+                                <ul style="list-style:lower-roman;">
+                                    <li>
+                                        <a href="transkript.pdf" download>Transcript</a>
+                                    </li>
+                                </ul>
+                            </ol>
+                        </section>
                     </figcaption>
                 </figure>
             </div>
@@ -57,88 +70,71 @@
                 <hr>
                 <h2 class="headline" id="education">EDUCATION AND CERTIFICATES</h2>
                 <hr>
-                <section>
-                    <ol>
-                        <h3>EDUCATION</h3>
-                        
-                        <li>Dr. Kemal Naci Ekşi Anatolian High School <a href="https://nacieksianadolulisesi.meb.k12.tr/" target="_blank">(see)</a></li>
-                        <li>Yıldız Technical University <a href="https://yildiz.edu.tr/" target="_blank">(see)</a><br><a href="https://kml.yildiz.edu.tr/" target="_blank">Chemistry Program</a></li>
-                        <ul style="list-style:lower-roman;">
-                            <li>
-                                <a href="transkript.pdf" download>Transcript</a>
-                            </li>
+                <div class="overscroll-auto md:overscroll-contain">
+                    <section id="certificate">
+                        <h3>CERTIFICATES</h3>
+                        <ul>
+                            <div class="flex-col overscroll-contain">
+                                <h4>Lab Akademi</h4>
+                                <br>
+                                <li>High Performance Liquid Chromatography (HPLC) Basic User Training</li>
+                                <button class="btn"><a href="content\Certificates\High Performance Liquid Chromatography (HPLC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7919648332OA" target="_blank">Verify</a></button>
+                                <br><br>
+                                <li>Analytical Method Development Training in Liquid Chromatography (LC) System</li>
+                                <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Liquid Chromatography (LC) System.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9945974655OA" target="_blank">Verify</a></button>
+                                <br><br>
+                                <li>Gas Chromatography (GC) Basic User Training</li>
+                                <button class="btn"><a href="content\Certificates\Gas Chromatography (GC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=8900441835OA" target="_blank">Verify</a></button>
+                                <br><br>                
+                                <li>Analytical Method Development Training in Gas Chromatography (GC) System</li>
+                                <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Gas Chromatography (GC) System.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9980564106OA" target="_blank">Verify</a></button>
+                                <br><br>                  
+                                <li>The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar</li>
+                                <button class="btn"><a href="content\Certificates\The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7113670964OA" target="_blank">Verify</a></button>
+                                <br><br>                  
+                                <li>Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar</li>
+                                <button class="btn"><a href="content\Certificates\Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=4032483031OA" target="_blank">Verify</a></button>
+                                <br><br>                      
+                                <li>Applied Bioinformatic Training</li>
+                                <button class="btn"><a href="content\Certificates\Applied Bioinformatic Training.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=6327331294OA" target="_blank">Verify</a></button>
+                                <br><br>
+                                <h4>Bilgeİş</h4>
+                                <br>
+                                <li>Python Programming - 1 </li>
+                                <button class="btn"><a href="content\Certificates\Python_Programlama_1.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=0c61e340-1d03-11ee-a2b2-2f2b4f903b83" target="_blank">Verify</a></button>
+                                <br><br>
+                                <li>Python Programming - 2 </li>
+                                <button class="btn"><a href="content\Certificates\Python_Programlama_2.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=6af36310-1e93-11ee-b44d-918362df733a" target="_blank">Verify</a></button>
+                                <br><br>
+                                <li>Arduino and Introduction to Microcontrollers</li>
+                                <button class="btn"><a href="content\Certificates\Arduino ile Mikrodenetleyicilere Giriş.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=da5401a0-3579-11ef-b029-0dbc69cfd157" target="_blank">Verify</a></button>
+                                <br><br>
+                                <h4>Turkish Physics Society</h4>
+                                <br>
+                                <li>Certificate of Attendance Turkish Physical Society 39<sup>th</sup> International Physics Congress</li>
+                                <button class="btn"><a href="\content\Certificates\.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://drive.google.com/file/d/1dDqZz710kPO4KtSuEVqnnomrihoJ7PR3/view?usp=drive_link" target="_blank">Verify</a></button>
+                                <br><br>
+                                <h4>IUGEN - Istanbul University Genetics Club</h4>
+                                <br>
+                                <li>Certificate of Attendance 19<sup>th</sup> International Molecular Biology and Genetics Winter School</li>
+                                <button class="btn"><a href="\content\Certificates\Certificate of Attendance 19th International Molecular Biology and Genetics Winter School.pdf" target="_blank" download>Download Certificate</a></button>
+                                <button class="btn"><a href="https://verified.sertifier.com/en/verify/69929823463271/" target="_blank">Verify</a></button>
+                                <br><br>
+                            </div>
                         </ul>
-                    </ol>
-                </section>
-                <section id="certificate">
-                    <h3>CERTIFICATES</h3>
-                    <ul class="flex space-around">
-                        <div>
-                            <h4>Lab Akademi</h4>
-                            <br>
-                            <li>High Performance Liquid Chromatography (HPLC) Basic User Training</li>
-                            <button class="btn"><a href="content\Certificates\High Performance Liquid Chromatography (HPLC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7919648332OA" target="_blank">Verify</a></button>
-                            <br><br>
-                            <li>Analytical Method Development Training in Liquid Chromatography (LC) System</li>
-                            <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Liquid Chromatography (LC) System.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9945974655OA" target="_blank">Verify</a></button>
-                            <br><br>
-                            <li>Gas Chromatography (GC) Basic User Training</li>
-                            <button class="btn"><a href="content\Certificates\Gas Chromatography (GC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=8900441835OA" target="_blank">Verify</a></button>
-                            <br><br>                
-                            <li>Analytical Method Development Training in Gas Chromatography (GC) System</li>
-                            <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Gas Chromatography (GC) System.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9980564106OA" target="_blank">Verify</a></button>
-                            <br><br>                  
-                            <li>The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar</li>
-                            <button class="btn"><a href="content\Certificates\The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7113670964OA" target="_blank">Verify</a></button>
-                            <br><br>                  
-                            <li>Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar</li>
-                            <button class="btn"><a href="content\Certificates\Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=4032483031OA" target="_blank">Verify</a></button>
-                            <br><br>                      
-                            <li>Applied Bioinformatic Training</li>
-                            <button class="btn"><a href="content\Certificates\Applied Bioinformatic Training.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=6327331294OA" target="_blank">Verify</a></button>
-                            <br><br>
-                        </div>
-                        <div>
-                            <h4>Bilgeİş</h4>
-                            <br>
-                            <li>Python Programming - 1 </li>
-                            <button class="btn"><a href="content\Certificates\Python_Programlama_1.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=0c61e340-1d03-11ee-a2b2-2f2b4f903b83" target="_blank">Verify</a></button>
-                            <br><br>
-                            <li>Python Programming - 2 </li>
-                            <button class="btn"><a href="content\Certificates\Python_Programlama_2.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=6af36310-1e93-11ee-b44d-918362df733a" target="_blank">Verify</a></button>
-                            <br><br>
-                            <li>Arduino and Introduction to Microcontrollers</li>
-                            <button class="btn"><a href="content\Certificates\Arduino ile Mikrodenetleyicilere Giriş.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=da5401a0-3579-11ef-b029-0dbc69cfd157" target="_blank">Verify</a></button>
-                            <br><br>
-                        </div>
-                        <div>
-                            <h4>Turkish Physics Society</h4>
-                            <br>
-                            <li>Certificate of Attendance Turkish Physical Society 39<sup>th</sup> International Physics Congress</li>
-                            <button class="btn"><a href="\content\Certificates\.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://drive.google.com/file/d/1dDqZz710kPO4KtSuEVqnnomrihoJ7PR3/view?usp=drive_link" target="_blank">Verify</a></button>
-                            <br><br>
-                        </div>
-                        <div>
-                            <h4>IUGEN - Istanbul University Genetics Club</h4>
-                            <br>
-                            <li>Certificate of Attendance 19<sup>th</sup> International Molecular Biology and Genetics Winter School</li>
-                            <button class="btn"><a href="\content\Certificates\Certificate of Attendance 19th International Molecular Biology and Genetics Winter School.pdf" target="_blank" download>Download Certificate</a></button>
-                            <button class="btn"><a href="https://verified.sertifier.com/en/verify/69929823463271/" target="_blank">Verify</a></button>
-                            <br><br>
-                        </div>
-                    </ul>
-                </section>
+                    </section>
+                </div>
             </div>
             <div class="level" id="level-3">
                 <hr>
@@ -239,65 +235,64 @@
                 </section>
             </div>
             <div class="level" id="level-4">
+                <hr>
                 <h2 class="headline" id="scientific">SCIENTIFIC ACTIVITIES</h2>
-                <section>
-                    <h3>PROJECTS</h3>
-                    <p> <h4>TUBITAK-2242 University Students Research Projects Competition (2021):</h4> 
-                        Survey and Investigation of Ionospheric Anomalies through KATAY Ionosonde
-                        <br><br>
-                        <span>Almina DOKUR (Project Manager)</span>, Mehmet Baran ÖKTEN, Ömer Faruk AYDIN, Anjelika AYDIN, Deniz SÖNMEZ, Eslem AKTAŞ, Münib Cahit AKGÜL, Onur Akın AKBAL, Seray ÖZÇELİK, Pelin ŞENER
-                        <br><br>
-                        <span>Supervisor:</span> Zehra Can
-                        <br>
-                        <blockquote>Qualified to participate in the final competition in the category of Defense, Space and Aviation.</blockquote>
-                    </p>
-                    <p>
-                        <h4>TUBITAK 2209-A - University Students Research Projects Support Program (2022):</h4>
-                        Investigating the Impact of the Ionosphere on GNSS Systems Through Different Factors Affecting the Ionosphere
-                        <br><br>
-                        <span>Yasmina YEGE (Project Manager)</span>, Onur Akın AKBAL, Deniz SÖNMEZ
-                        <br><br>
-                        <span>Supervisor:</span> Zehra CAN
-                    </p>
-                </section>
-                <section>
-                    <h3>CONFERENCE PROCEEDINGS</h3>
-                    <p>
-                        <h4>TURKISH PHYSICAL SOCIETY 38TH INTERNATIONAL PHYSICS CONGRESS (2023):</h4>
-                        Radon Anomaly Effects on Atmosphere in Middle and Equatorial Latitudes
-                        <br><br>
-                        <span>Onur Akın AKBAL</span>, Yasmina YEGE, Deniz SÖNMEZ, Zehra CAN
-                        <br><br>
-                    </p>
-                    <p>
-                        <h4>7.ULUSAL KUTUP BİLİMLERİ SEMPOZYUMU (2023):</h4>
-                        Investigation of the Effect of Ionospheric Change on Positioning Systems in the Arctic Region in the Summer and Winter Seasons of 2005
-                        <br><br>
-                        <span>Deniz SÖNMEZ</span>, Yasmina YEGE, Zehra CAN, Onur Akın AKBAL
-                        <br><br>
-                    </p>
-                    <p>
-                        <h4>2209A/B FEN ve MATEMATİK ÖĞRENCİ ÇALIŞTAYI (2024):</h4>
-                        The Effect of Geomagnetic Storms Occurring in the Summer of 2005 on the Polar Ionosphere
-                        <br><br>
-                        <span>Yasmina YEGE</span> , Deniz SÖNMEZ, Onur Akın AKBAL, Zehra CAN
-                        <br><br>
-                    </p>
-                </section>
+                <hr>
+                <div class="overflow-auto md:overscroll-contain">
+                    <section>
+                        <h3>PROJECTS</h3>
+                        <p> <h4>TUBITAK-2242 University Students Research Projects Competition (2021):</h4> 
+                            Survey and Investigation of Ionospheric Anomalies through KATAY Ionosonde
+                            <br><br>
+                            <span>Almina DOKUR (Project Manager)</span>, Mehmet Baran ÖKTEN, Ömer Faruk AYDIN, Anjelika AYDIN, Deniz SÖNMEZ, Eslem AKTAŞ, Münib Cahit AKGÜL, Onur Akın AKBAL, Seray ÖZÇELİK, Pelin ŞENER
+                            <br><br>
+                            <span>Supervisor:</span> Zehra Can
+                            <br>
+                            <blockquote>Qualified to participate in the final competition in the category of Defense, Space and Aviation.</blockquote>
+                            <br><br>
+                            <h4>TUBITAK 2209-A - University Students Research Projects Support Program (2022):</h4>
+                            Investigating the Impact of the Ionosphere on GNSS Systems Through Different Factors Affecting the Ionosphere
+                            <br><br>
+                            <span>Yasmina YEGE (Project Manager)</span>, Onur Akın AKBAL, Deniz SÖNMEZ
+                            <br><br>
+                            <span>Supervisor:</span> Zehra CAN
+                        </p>
+                    </section>
+                    <section>
+                        <h3>CONFERENCE PROCEEDINGS</h3>
+                        <p>
+                            <h4>TURKISH PHYSICAL SOCIETY 38TH INTERNATIONAL PHYSICS CONGRESS (2023):</h4>
+                            Radon Anomaly Effects on Atmosphere in Middle and Equatorial Latitudes
+                            <br><br>
+                            <span>Onur Akın AKBAL</span>, Yasmina YEGE, Deniz SÖNMEZ, Zehra CAN
+                            <br><br>
+                            <h4>7.ULUSAL KUTUP BİLİMLERİ SEMPOZYUMU (2023):</h4>
+                            Investigation of the Effect of Ionospheric Change on Positioning Systems in the Arctic Region in the Summer and Winter Seasons of 2005
+                            <br><br>
+                            <span>Deniz SÖNMEZ</span>, Yasmina YEGE, Zehra CAN, Onur Akın AKBAL
+                            <br><br>
+                            <h4>2209A/B FEN ve MATEMATİK ÖĞRENCİ ÇALIŞTAYI (2024):</h4>
+                            The Effect of Geomagnetic Storms Occurring in the Summer of 2005 on the Polar Ionosphere
+                            <br><br>
+                            <span>Yasmina YEGE</span> , Deniz SÖNMEZ, Onur Akın AKBAL, Zehra CAN
+                            <br>
+                        </p>
+                    </section>
+                </div>
             </div>
             <div class="level" id="level-5">
                 <hr>
                 <h2 class="headline" id="contact">CONTACT AND THE OTHER LINKS</h2>
                 <hr>
                 <blockquote>
-                    <h4>E-Mails</h4>
-                    <a href="onurakinakba@gmail.com">onurakinakbal@gmail.com</a>
+                    <h3>E-Mails</h3>
+                    onurakinakbal@gmail.com
                     <br>
-                    <a href="akin.akbal@std.yildiz.edu.tr">akin.akbal@std.yildiz.edu.tr</a>
+                    akin.akbal@std.yildiz.edu.tr
                     <br>
                 </blockquote>
                 <blockquote>
-                    <h4>Other Links</h4>
+                    <h3>Other Links</h3>
                     LinkedIn: <a href="https://www.linkedin.com/in/onurakinakbal/">https://www.linkedin.com/in/onurakinakbal/</a>
                     <br>
                     GitHub: <a href="https://github.com/onurakinakbal">https://github.com/onurakinakbal</a>
@@ -322,8 +317,8 @@
                             <label for="email">Your Message:<br></label>
                             <input class="bg-white text-grey" type="comment" id="comment" name="comment" size="50"> 
                             <br>
-                            <button class="btn" type="submit" value="Send">Send</button>
-                            <button class="btn" type="reset" value="Reset">Reset</button>
+                            <button class="btn" type="submit" value="Send" target="_blank">Send</button>
+                            <button class="btn" type="reset" value="Reset" target="_blank">Reset</button>
                             <br><br>
                         </form>
                     </fieldset>

@@ -24,18 +24,24 @@
         @apply block
     }
     h3{
-        @apply text-center
+        @apply text-center font-bold
     }
     p{
         @apply p-8 text-justify
     }
+    span{
+        @apply font-bold
+    }
     figure{
         @apply box-content mx-8 p-8 lg:box-border float-right
+    }
+    section{
+        @apply overflow-y-auto
     }
 }
 
 .level{
-    @apply min-h-screen block p-8 bg-primary-dark text-black
+    @apply min-h-screen block p-8 bg-primary-dark  text-black
 }
 #level-1{
     @apply sticky top-0
@@ -47,19 +53,19 @@
     @apply sticky top-0
 }
 #level-4{
-    @apply sticky top-0 block
+    @apply sticky top-0
 }
 #level-5{
     @apply sticky top-0
 }
 #form{
-    @apply justify-center
+    @apply justify-evenly
 }
 .headline{
     @apply bg-primary-light text-white font-bold min-h-2.5 min-w-full text-center
 }
 .btn{
-    @apply bg-primary-light text-white px-2 py-2 h-fit w-fit rounded-lg transition-all duration-60 
+    @apply flex-row bg-primary-light text-white px-2 py-2 h-fit w-fit rounded-lg transition-all duration-60 
 }
 .btn:hover{
     @apply bg-primary-light brightness-125 rounded-full
