@@ -9,7 +9,7 @@
         @apply text-gray-950 font-extrabold
     }
     nav{
-        @apply bg-primary-light sticky top-0 min-w-screen
+        @apply bg-primary-light dark:bg-primary-dark sticky top-0 min-w-screen
     }
     div{
         @apply flex  m-auto
@@ -38,7 +38,7 @@
 }
 
 .level{
-    @apply min-h-screen overflow-auto block p-8 bg-primary-dark text-black dark: bg-primary-light
+    @apply min-h-screen overflow-auto block p-8 bg-primary-dark dark:bg-primary-light text-black 
 }
 #level-1{
     @apply sticky top-0
@@ -56,19 +56,19 @@
     @apply sticky top-0
 }
 #form{
-    @apply flex-col m-auto px-1 bg-primary-light w-1/2 rounded-2xl
+    @apply flex-col m-auto px-1 bg-primary-light dark:bg-primary-dark w-1/2 rounded-2xl
 }
 .headline{
-    @apply bg-primary-light text-white font-extrabold text-3xl p-4 drop-shadow-lg min-h-2.5 min-w-full text-center
+    @apply bg-primary-light dark:bg-primary-dark text-white font-extrabold text-3xl p-4 drop-shadow-lg min-h-2.5 min-w-full text-center
 }
 .btn{
-    @apply block m-auto bg-primary-light text-white font-semibold py-2 px-4 rounded-lg border-2 border-white h-1/2 w-1/4 transition-all duration-60 
+    @apply block m-auto bg-primary-light dark:bg-primary-dark text-white font-semibold py-2 px-4 rounded-lg border-2 border-white h-1/2 w-1/4 transition-all duration-60 
 }
 .btn:hover{
     @apply border-[#f5f5f5] active:bg-[#7036a2] shadow-md brightness-125 rounded-full scale-90
 }
 .btn-2{
-    @apply block m-auto bg-primary-dark text-black font-semibold py-2 px-4 rounded-lg border-2 border-black h-1/2 w-1/4 transition-all duration-60 
+    @apply block m-auto bg-primary-dark dark:bg-primary-light text-black font-semibold py-2 px-4 rounded-lg border-2 border-black h-1/2 w-1/4 transition-all duration-60 
 }
 .btn-2:hover{
     @apply border-[#694414] active:bg-[#b67c31] shadow-md brightness-125 rounded-full scale-90
