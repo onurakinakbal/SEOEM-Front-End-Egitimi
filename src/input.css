@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme{
+    --color-primary-light:#b173ea;
+    --color-primary-dark:#e29226;
+}
+@layer base{
+    h1{
+        @apply text-gray-950 font-extrabold
+    }
+    nav{
+        @apply bg-primary-light dark:bg-primary-dark sticky top-0 min-w-screen
+    }
+    div{
+        @apply flex  m-auto
+    }
+    h3{
+        @apply text-center font-bold
+    }
+    h4{
+        @apply text-center font-black
+    }
+    p{
+        @apply p-4 text-justify
+    }
+    span{
+        @apply font-bold
+    }
+    figure{
+        @apply box-content mx-8 p-8 lg:box-border float-right
+    }
+    input{
+        @apply text-center w-9/10 h-7
+    }
+    section{
+        @apply overflow-y-auto
+    }
+}
+
+.level{
+    @apply min-h-screen overflow-auto block p-8 bg-primary-dark dark:bg-primary-light text-black 
+}
+#level-1{
+    @apply sticky top-0
+}
+#level-2{
+    @apply sticky top-0
+}
+#level-3{
+    @apply sticky top-0
+}
+#level-4{
+    @apply sticky top-0
+}
+#level-5{
+    @apply sticky top-0
+}
+#form{
+    @apply flex-col m-auto px-1 bg-primary-light dark:bg-primary-dark w-1/2 rounded-2xl
+}
+.headline{
+    @apply bg-primary-light dark:bg-primary-dark text-white font-extrabold text-3xl p-4 drop-shadow-lg min-h-2.5 min-w-full text-center
+}
+.btn{
+    @apply block m-auto bg-primary-light dark:bg-primary-dark text-white font-semibold py-2 px-4 rounded-lg border-2 border-white h-1/2 w-1/4 transition-all duration-60 
+}
+.btn:hover{
+    @apply border-[#f5f5f5] active:bg-[#7036a2] shadow-md brightness-125 rounded-full scale-90
+}
+.btn-2{
+    @apply block m-auto bg-primary-dark dark:bg-primary-light text-black font-semibold py-2 px-4 rounded-lg border-2 border-black h-1/2 w-1/4 transition-all duration-60 
+}
+.btn-2:hover{
+    @apply border-[#694414] active:bg-[#b67c31] shadow-md brightness-125 rounded-full scale-90
+}
