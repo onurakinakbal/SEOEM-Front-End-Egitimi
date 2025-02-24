@@ -183,10 +183,13 @@
 }
 @layer utilities {
 <<<<<<< HEAD
+<<<<<<< HEAD
   .float-left {
     float: left;
   }
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .collapse {
     visibility: collapse;
   }
@@ -208,6 +211,9 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .m-2\.5 {
     margin: calc(var(--spacing) * 2.5);
@@ -219,7 +225,10 @@
     margin: auto;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .mx-auto {
     margin-inline: auto;
   }
@@ -238,6 +247,9 @@
   .block {
     display: block;
   }
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .flex {
     display: flex;
@@ -254,6 +266,15 @@
   .inline-flex {
     display: inline-flex;
   }
+<<<<<<< HEAD
+=======
+  .list-item {
+    display: list-item;
+  }
+  .table {
+    display: table;
+  }
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -263,6 +284,7 @@
   .max-h-screen {
     max-height: 100vh;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   .w-1 {
@@ -280,12 +302,32 @@
   }
 <<<<<<< HEAD
 =======
+=======
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/5 {
+    width: calc(3/5 * 100%);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .resize {
     resize: both;
   }
   .grid-flow-col {
     grid-auto-flow: column;
   }
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -312,11 +354,17 @@
     overflow: auto;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .bg-gray-400 {
     background-color: var(--color-gray-400);
@@ -341,6 +389,12 @@
   .text-black {
     color: var(--color-black);
   }
+<<<<<<< HEAD
+=======
+  .underline {
+    text-decoration-line: underline;
+  }
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .decoration-solid {
     text-decoration-style: solid;
   }
@@ -348,7 +402,10 @@
     text-underline-offset: 2px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -364,6 +421,9 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   .transition-all {
     transition-property: all;
@@ -419,9 +479,12 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
     color: var(--color-gray-950);
+<<<<<<< HEAD
     &:where(.dark, .dark *) {
       color: var(--color-gray-400);
     }
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   }
   nav {
     position: sticky;
@@ -511,6 +574,12 @@
   background-color: var(--color-primary-light);
   padding-inline: calc(var(--spacing) * 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  &:where(.dark, .dark *) {
+    background-color: var(--color-primary-dark);
+  }
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 =======
   &:where(.dark, .dark *) {
     background-color: var(--color-primary-dark);
@@ -531,6 +600,12 @@
   --tw-drop-shadow: drop-shadow(var(--drop-shadow-lg));
   filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  &:where(.dark, .dark *) {
+    background-color: var(--color-primary-dark);
+  }
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 =======
   &:where(.dark, .dark *) {
     background-color: var(--color-primary-dark);
@@ -597,6 +672,7 @@
   --tw-duration: 60ms;
   transition-duration: 60ms;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 .btn-2:hover {
   --tw-scale-x: 90%;
@@ -620,6 +696,10 @@
   &:where(.dark, .dark *) {
     background-color: var(--color-primary-light);
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
+  &:where(.dark, .dark *) {
+    background-color: var(--color-primary-light);
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   }
 }
 .btn-2:hover {
@@ -638,6 +718,7 @@
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -653,16 +734,22 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+<<<<<<< HEAD
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
+=======
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+<<<<<<< HEAD
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -677,6 +764,12 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
+=======
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 }
 @property --tw-blur {
   syntax: "*";
@@ -715,17 +808,36 @@
   inherits: false;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @property --tw-border-style {
 =======
+=======
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 @property --tw-drop-shadow {
   syntax: "*";
   inherits: false;
 }
 @property --tw-scale-x {
+<<<<<<< HEAD
 >>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
   syntax: "*";
   inherits: false;
   initial-value: solid;
+=======
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+>>>>>>> b49203c143bea564f7f8b0b8714e1fc3cb978272
 }
 @property --tw-duration {
   syntax: "*";
