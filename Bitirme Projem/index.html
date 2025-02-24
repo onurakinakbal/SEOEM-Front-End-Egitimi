@@ -7,24 +7,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/src/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Curriculum Vitae (CV)</title>
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{
+                const body = document.body;
+
+                const button = document.querySelector("button");
+                button.addEventListener("click",()=>{
+                    body.classList.toggle("dark");
+                })
+            });
+        </script>
     </head>
-    <body class="bg-gray-100 dark:bg-gray-700">
+    <body class="bg-gray-400 brightness-105 dark:brightness-90 dark:bg-gray-900">
         <aside>
             <header>
                 <nav class="max-h-16 flex items-center justify-around">
                     <h1 class=" text-3xl font-bold hover:text-gray-600"><a href="#" >CV</a></h1>
                     <ul class="flex flex-row gap-4">
                         <li class="transition-all hover:scale-125" ><a href="#about">ABOUT</a></li>
-                        <li class="transition-all hover:scale-125" ><a href="#education">EDUCATION</a></li>
+                        <li class="transition-all hover:scale-125" ><a href="#education">CERTIFICATES</a></li>
                         <li class="transition-all hover:scale-125" ><a href="#experiences">EXPERIENCES</a></li>
                         <li class="transition-all hover:scale-125" ><a href="#scientific">SCIENTIFIC</a></li>
                         <li class="transition-all hover:scale-125" ><a href="#contact">CONTACT</a></li>
                     </ul>
+                    <button type="button">
+                        <span class="dark:hidden">
+                            <i class="fa-solid fa-moon"><br>Dark Mode</i>
+                        </span>
+                        <span class="hidden dark:block">
+                            <i class="fa-regular fa-sun"><br>Light Mode</i>
+                        </span>
+                    </button>
+                    
                 </nav>
             </header>
         </aside>
-        <main>
+        <main class="m-2.5">
             <div class="level" id="level-1">
                 <hr>
                 <h2 class="headline" id="about">ABOUT</h2>
@@ -33,31 +53,31 @@
                     <p class="float-left">
                         Hello, my name is Onur Akın Akbal. I graduated from Dr. Kemal Naci Ekşi Anatolian High School in 2019. I am currently continuing my education life as a senior student in the Department of Chemistry at Yıldız Technical University Davutpaşa Campus. During this time, I had the chance to take part in many teams, including YTU Astronomy Club, YTU Space Physics Research Group, YTU Eren Research Group and Aksuvital Quality-Control Team. At YTU Astronomy Club, I took part in HORIZON Project, KATAY team and other coordinatorships. In these period, I gained valuable experience on the construction of mirror telescopes and earthquake research. After the KATAY project, I participated in Space Physics Research and participated in various scientific activities. During my thesis process, I studied the functionalization and antibacterial properties of chitosan biopolymer in Eren Research Group. I am still continuing my studies in these two teams. In addition, last summer, I completed my compulsory internship as a chemistry intern in the quality control team at Aksuvital. During this internship, I had the opportunity to work with instrumental tools such as HPLC, FTIR, GC, UV and AAS and gained new valuable knowledge about GMP and pharmacopoeia. In the upcoming periods, I aim to take new steps to improve myself in my career, especially in the field of chemistry after graduation. My working interests are polymers, quality-control, software, and my hobbies are amateur astronomy, physics, biology, PC games, TCG card games, cooking and learning new things.
                         <br><br>
-                        To get to know me better:
-                        <a href="" target="_blank">Here is my personal site! </a>
+                        <!-- To get to know me better:
+                        <a href="" target="_blank">Here is my personal site! </a> -->
                     </p>
                     <br>
                 </article>
                 <figure class="inline-block w-1/4">
                     <img src="content/profile.jpg" alt="Profile Photo" width="200px">
                     <figcaption>
-                        NAME: Onur Akın
+                        <span>NAME:</span> Onur Akın
                         <br>
-                        SURNAME: Akbal
+                        <span>SURNAME:</span> Akbal
                         <br>
-                        FACULTY AND DEPARTMENT: Science & Art Faculty – Chemistry Programme
+                        <span>FACULTY AND DEPARTMENT:</span> Science & Art Faculty – Chemistry Programme
                         <br>
-                        DEGREE: Undergraduated Student
-                        <br>
+                        <span>DEGREE:</span> Undergraduated Student
+                        <br><br>
                         <section>
                             <ol>
-                                <h3>EDUCATION</h3>
+                                <span class="underline-offset-2 decoration-solid">EDUCATION:</span>
                                 
-                                <li>Dr. Kemal Naci Ekşi Anatolian High School <a href="https://nacieksianadolulisesi.meb.k12.tr/" target="_blank">(see)</a></li>
-                                <li>Yıldız Technical University <a href="https://yildiz.edu.tr/" target="_blank">(see)</a><br><a href="https://kml.yildiz.edu.tr/" target="_blank">Chemistry Program</a></li>
+                                <li>Dr. Kemal Naci Ekşi Anatolian High School <span><a href="https://nacieksianadolulisesi.meb.k12.tr/" target="_blank">(see)</a></span></li>
+                                <li>Yıldız Technical University <span><a href="https://yildiz.edu.tr/" target="_blank">(see)</a></span> <br> <a href="https://kml.yildiz.edu.tr/" target="_blank">Chemistry Program</a> (Language of Education: English)</li>
                                 <ul style="list-style:lower-roman;">
                                     <li>
-                                        <a href="transkript.pdf" download>Transcript</a>
+                                        <span><a href="transkript.pdf" download>Transcript</a></span>
                                     </li>
                                 </ul>
                             </ol>
@@ -68,71 +88,73 @@
 
             <div class="level" id="level-2">
                 <hr>
-                <h2 class="headline" id="education">EDUCATION AND CERTIFICATES</h2>
+                <h2 class="headline" id="education">CERTIFICATES</h2>
                 <hr>
-                <div class="overscroll-auto md:overscroll-contain">
-                    <section id="certificate">
+                <div>
+                    <section class="max-h-screen" id="certificate">
                         <h3>CERTIFICATES</h3>
-                        <ul>
-                            <div class="flex-col overscroll-contain">
-                                <h4>Lab Akademi</h4>
-                                <br>
-                                <li>High Performance Liquid Chromatography (HPLC) Basic User Training</li>
+                        <div class="grid grid-flow-col grid-cols-2 grid-rows-6">
+                            <div>
+                                <p>High Performance Liquid Chromatography (HPLC) Basic User Training </p>
                                 <button class="btn"><a href="content\Certificates\High Performance Liquid Chromatography (HPLC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
                                 <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7919648332OA" target="_blank">Verify</a></button>
-                                <br><br>
-                                <li>Analytical Method Development Training in Liquid Chromatography (LC) System</li>
+                            </div>
+                            <div>
+                                <p>Analytical Method Development Training in Liquid Chromatography (LC) System</p>
                                 <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Liquid Chromatography (LC) System.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9945974655OA" target="_blank">Verify</a></button>
-                                <br><br>
-                                <li>Gas Chromatography (GC) Basic User Training</li>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9945974655OA" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Gas Chromatography (GC) Basic User Training</p>
                                 <button class="btn"><a href="content\Certificates\Gas Chromatography (GC) Basic User Training.pdf" target="_blank" download>Download Certificate</a></button>
                                 <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=8900441835OA" target="_blank">Verify</a></button>
-                                <br><br>                
-                                <li>Analytical Method Development Training in Gas Chromatography (GC) System</li>
+                            </div>
+                            <div>
+                                <p>Analytical Method Development Training in Gas Chromatography (GC) System</p>
                                 <button class="btn"><a href="content\Certificates\Analytical Method Development Traning in Gas Chromatography (GC) System.pdf" target="_blank" download>Download Certificate</a></button>
                                 <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=9980564106OA" target="_blank">Verify</a></button>
-                                <br><br>                  
-                                <li>The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar</li>
+                            </div>
+                            <div>
+                                <p>The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar</p>
                                 <button class="btn"><a href="content\Certificates\The Importance of Good Hygiene Practices (GHP) for Food Safety Webinar.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7113670964OA" target="_blank">Verify</a></button>
-                                <br><br>                  
-                                <li>Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar</li>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=7113670964OA" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar</p>
                                 <button class="btn"><a href="content\Certificates\Inductively Coupled Plasma Atomic Emission Spectroscopy (ICP-OES) Technique and Application Webinar.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=4032483031OA" target="_blank">Verify</a></button>
-                                <br><br>                      
-                                <li>Applied Bioinformatic Training</li>
+                                <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=4032483031OA" target="_blank">Verify</a></button>    
+                            </div>             
+                            <div>
+                                <p>Applied Bioinformatic Training</p>
                                 <button class="btn"><a href="content\Certificates\Applied Bioinformatic Training.pdf" target="_blank" download>Download Certificate</a></button>
                                 <button class="btn"><a href="https://uzem.labakademi.com/admin/tool/certificate/index.php?code=6327331294OA" target="_blank">Verify</a></button>
-                                <br><br>
-                                <h4>Bilgeİş</h4>
-                                <br>
-                                <li>Python Programming - 1 </li>
+                            </div>
+                            <div>
+                                <p>Python Programming - 1</p>
                                 <button class="btn"><a href="content\Certificates\Python_Programlama_1.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=0c61e340-1d03-11ee-a2b2-2f2b4f903b83" target="_blank">Verify</a></button>
-                                <br><br>
-                                <li>Python Programming - 2 </li>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=0c61e340-1d03-11ee-a2b2-2f2b4f903b83" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Python Programming - 2</p>
                                 <button class="btn"><a href="content\Certificates\Python_Programlama_2.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=6af36310-1e93-11ee-b44d-918362df733a" target="_blank">Verify</a></button>
-                                <br><br>
-                                <li>Arduino and Introduction to Microcontrollers</li>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=6af36310-1e93-11ee-b44d-918362df733a" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Arduino and Introduction to Microcontrollers</p>
                                 <button class="btn"><a href="content\Certificates\Arduino ile Mikrodenetleyicilere Giriş.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=da5401a0-3579-11ef-b029-0dbc69cfd157" target="_blank">Verify</a></button>
-                                <br><br>
-                                <h4>Turkish Physics Society</h4>
-                                <br>
-                                <li>Certificate of Attendance Turkish Physical Society 39<sup>th</sup> International Physics Congress</li>
+                                <button class="btn"><a href="https://bilgeis.net/moodle/mod/simplecertificate/verify.php?code=da5401a0-3579-11ef-b029-0dbc69cfd157" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Certificate of Attendance Turkish Physical Society 39<sup>th</sup> International Physics Congress</p>
                                 <button class="btn"><a href="\content\Certificates\.pdf" target="_blank" download>Download Certificate</a></button>
-                                <button class="btn"><a href="https://drive.google.com/file/d/1dDqZz710kPO4KtSuEVqnnomrihoJ7PR3/view?usp=drive_link" target="_blank">Verify</a></button>
-                                <br><br>
-                                <h4>IUGEN - Istanbul University Genetics Club</h4>
-                                <br>
-                                <li>Certificate of Attendance 19<sup>th</sup> International Molecular Biology and Genetics Winter School</li>
+                                <button class="btn"><a href="https://drive.google.com/file/d/1dDqZz710kPO4KtSuEVqnnomrihoJ7PR3/view?usp=drive_link" target="_blank">Verify</a></button>    
+                            </div>
+                            <div>
+                                <p>Certificate of Attendance 19<sup>th</sup> International Molecular Biology and Genetics Winter School</p>
                                 <button class="btn"><a href="\content\Certificates\Certificate of Attendance 19th International Molecular Biology and Genetics Winter School.pdf" target="_blank" download>Download Certificate</a></button>
                                 <button class="btn"><a href="https://verified.sertifier.com/en/verify/69929823463271/" target="_blank">Verify</a></button>
-                                <br><br>
                             </div>
-                        </ul>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -153,85 +175,7 @@
                         In the KATAY Project, which aims to identify the factors causing ionospheric anomalies associated with large earthquakes between 2010 and 2020 and investigate how these anomalies can be used in earthquake predictions, we examined the changes in the ionosphere before, during, and after the earthquakes. During my time as a support team member in this project, I had the opportunity to develop my skills in research, literature review, and reading academic papers.
                     </p>
                     <h5>HORIZON</h5>
-                    <p>In this project, we aim to research different telescope models, produce our own reflecting telescopes and deliver these produced telescopes to village schools. During my time as a member of the Optics Team in this project, I took part in <a href="https://www.youtube.com/watch?v=0Uzeyz36tAE" target="_blank">polishing phase</a> of grinded telescope glasses.</p>
-                </section>
-                <section>
-                    <h3>INSTRUMENTS</h3>
-                    <figure>
-                        <table class="table-auto">
-                            <thead class="border border-gray-300 dark:border-gray-600">
-                                <th>Instruments I Used Before</th>
-                                <th>Level</th>
-                            </thead>
-                            <tbody>
-                                <tr class="border border-gray-300 dark:border-gray-700">
-                                    <td >FTIR</td>
-                                    <td> &#127775 &#127775 &#127775 &#127775 &#127775</td>
-                                </tr>
-                                <tr class="border border-gray-300 dark:border-gray-700">
-                                    <td>AAS</td>
-                                    <td> &#127775 &#127775 &#127775 &#127775</td>
-                                </tr>
-                                <tr class="border border-gray-300 dark:border-gray-700">
-                                    <td>UV-Vis</td>
-                                    <td>&#127775 &#127775 &#127775 &#127775</td>
-                                </tr>
-                                <tr class="border border-gray-300 dark:border-gray-700">
-                                    <td>HPLC</td>
-                                    <td>&#127775 &#127775 &#127775</td>
-                                </tr class="border border-gray-300 dark:border-gray-700">
-                                <tr class="border border-gray-300 dark:border-gray-700">
-                                    <td>GC</td>
-                                    <td>&#127775 &#127775 &#127775</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </figure>
-                </section>
-                <section>
-                    <h3>PROGRAMS AND LANGUAGES (Programming and Markup)</h3>
-                    <figure>
-                        <table>
-                            <thead>
-                                <th>Programs I Used Before</th>
-                                <th>Level</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Microsoft Office</td>
-                                    <td> &#127775 &#127775 &#127775 </td>
-                                </tr>
-                                <tr>
-                                    <td>Microsoft Excel</td>
-                                    <td> &#127775 &#127775 &#127775 &#127775 &#127775  </td>
-                                </tr>
-                                <tr>
-                                    <td>Microsoft Powerpoint</td>
-                                    <td>&#127775 &#127775 &#127775 &#127775</td>
-                                </tr>
-                                <tr>
-                                    <td>SPSS</td>
-                                    <td>&#127775 &#127775</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </figure>
-                    <figure>
-                        <table>
-                            <thead>
-                                <th>Languages I Used Before</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Python</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML <span>( with CSS)</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <figcaption>see more in my <a href="https://github.com/onurakinakbal">GitHub</a> Account</figcaption>
-                    </figure>
+                    <p>In this project, we aim to research different telescope models, produce our own reflecting telescopes and deliver these produced telescopes to village schools. During my time as a member of the Optics Team in this project, I took part in <span><a href="https://www.youtube.com/watch?v=0Uzeyz36tAE" target="_blank">polishing phase</a></span> of grinded telescope glasses.</p>
                 </section>
             </div>
             <div class="level" id="level-4">
@@ -284,41 +228,43 @@
                 <hr>
                 <h2 class="headline" id="contact">CONTACT AND THE OTHER LINKS</h2>
                 <hr>
-                <blockquote>
+                <blockquote class="text-center">
                     <h3>E-Mails</h3>
                     onurakinakbal@gmail.com
                     <br>
                     akin.akbal@std.yildiz.edu.tr
                     <br>
                 </blockquote>
-                <blockquote>
+                <blockquote class="text-center">
                     <h3>Other Links</h3>
-                    LinkedIn: <a href="https://www.linkedin.com/in/onurakinakbal/">https://www.linkedin.com/in/onurakinakbal/</a>
+                    <span>LinkedIn: </span><a href="https://www.linkedin.com/in/onurakinakbal/">https://www.linkedin.com/in/onurakinakbal/</a>
                     <br>
-                    GitHub: <a href="https://github.com/onurakinakbal">https://github.com/onurakinakbal</a>
+                    <span>GitHub: </span><a href="https://github.com/onurakinakbal">https://github.com/onurakinakbal</a>
                     <br>
-                    HackerRank: <a href="https://www.hackerrank.com/profile/onurakinakbal">https://www.hackerrank.com/profile/onurakinakbal</a>
+                    <span>HackerRank: </span><a href="https://www.hackerrank.com/profile/onurakinakbal">https://www.hackerrank.com/profile/onurakinakbal</a>
                     <br>
-                    Google Scholar: <a href="https://scholar.google.com/citations?user=9aCLlS4AAAAJ&hl=tr">https://scholar.google.com/citations?user=9aCLlS4AAAAJ&hl=tr</a>
+                    <span>Google Scholar: </span><a href="https://scholar.google.com/citations?user=9aCLlS4AAAAJ&hl=tr">https://scholar.google.com/citations?user=9aCLlS4AAAAJ&hl=tr</a>
                     <br>
-                    Orcid ID: <a href="https://orcid.org/0009-0002-9011-3051">0009-0002-9011-3051</a>
+                    <span>Orcid ID: </span><a href="https://orcid.org/0009-0002-9011-3051">0009-0002-9011-3051</a>
                     <br>
                 </blockquote>
                 <section id="form">
                     <fieldset>
-                        <legend>CONTACT</legend>
+                        <legend><h3 class="text-black">CONTACT</h3></legend>
                         <form action="mailto:onurakinakbal@gmail.com" method="post" enctype="text/plain">
                             <label for="name">Your Name<br></label>
-                            <input class="bg-white text-grey" type="name" id="name" name="name">
+                            <input class="m-auto bg-white text-grey" type="name" id="name" name="name" placeholder="Enter your name">
                             <br>
                             <label for="email">Enter your email:<br></label>
-                            <input class="bg-white text-grey" type="email" id="email" name="email"> 
+                            <input class="m-auto bg-white text-grey" type="email" id="email" name="email" placeholder="Enter your e-mail, so I can reach out to you for your message"> 
                             <br>
-                            <label for="email">Your Message:<br></label>
-                            <input class="bg-white text-grey" type="comment" id="comment" name="comment" size="50"> 
-                            <br>
-                            <button class="btn" type="submit" value="Send" target="_blank">Send</button>
-                            <button class="btn" type="reset" value="Reset" target="_blank">Reset</button>
+                            <label for="comment">Your Message:<br></label>
+                            <input class="h-20 m-auto bg-white text-grey" type="comment" id="comment" name="comment" size="50" placeholder="Text your comment here"> 
+                            <br><br>
+                            <div class="form-btn">
+                                <button class="btn-2 dark:btn" type="submit" value="Send" target="_blank">Send</button>
+                                <button class="btn-2 dark:btn" type="reset" value="Reset" target="_blank">Reset</button>    
+                            </div>
                             <br><br>
                         </form>
                     </fieldset>
