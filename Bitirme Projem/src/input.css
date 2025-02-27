@@ -3,6 +3,7 @@
 @theme{
     --color-primary-light:#b173ea;
     --color-primary-dark:#e29226;
+
 }
 @layer base{
     h1{
@@ -19,6 +20,9 @@
     }
     h4{
         @apply text-center font-black
+    }
+    h5{
+        @apply font-black
     }
     p{
         @apply p-4 text-justify
@@ -50,10 +54,10 @@
     @apply sticky top-0
 }
 #level-2 div{
-    @apply -mb-0.5 justify-evenly 
+    @apply -mb-0.5 justify-evenly lg:-m-2
 }
 #level-2 div p{
-    @apply w-96 items-end
+    @apply w-96 items-end md:max-w-60
 }
 #level-3{
     @apply sticky top-0

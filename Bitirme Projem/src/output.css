@@ -556,17 +556,11 @@
   .w-1\/4 {
     width: calc(1/4 * 100%);
   }
-  .w-3\/5 {
-    width: calc(3/5 * 100%);
+  .w-2\/4 {
+    width: calc(2/4 * 100%);
   }
   .grid-flow-col {
     grid-auto-flow: column;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-rows-6 {
-    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
   .flex-row {
     flex-direction: row;
@@ -645,6 +639,59 @@
       }
     }
   }
+  .md\:float-right {
+    @media (width >= 48rem) {
+      float: right;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-rows-6 {
+    @media (width >= 48rem) {
+      grid-template-rows: repeat(6, minmax(0, 1fr));
+    }
+  }
+  .md\:text-xs {
+    @media (width >= 48rem) {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  .lg\:-mb-0\.5 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * -0.5);
+    }
+  }
+  .lg\:w-3\/5 {
+    @media (width >= 64rem) {
+      width: calc(3/5 * 100%);
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-rows-4 {
+    @media (width >= 64rem) {
+      grid-template-rows: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:text-base {
+    @media (width >= 64rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .lg\:text-lg {
+    @media (width >= 64rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .dark\:block {
     &:where(.dark, .dark *) {
       display: block;
@@ -693,6 +740,10 @@
   }
   h4 {
     text-align: center;
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  h5 {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
   }
@@ -747,10 +798,16 @@
 #level-2 div {
   margin-bottom: calc(var(--spacing) * -0.5);
   justify-content: space-evenly;
+  @media (width >= 64rem) {
+    margin: calc(var(--spacing) * -2);
+  }
 }
 #level-2 div p {
   width: calc(var(--spacing) * 96);
   align-items: flex-end;
+  @media (width >= 48rem) {
+    max-width: calc(var(--spacing) * 60);
+  }
 }
 #level-3 {
   position: sticky;
