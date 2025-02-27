@@ -29,6 +29,9 @@
     figure{
         @apply box-content mx-8 p-8 lg:box-border float-right
     }
+    form{
+        @apply ml-14
+    }
     input{
         @apply text-center w-9/10 h-7
     }
@@ -46,6 +49,12 @@
 #level-2{
     @apply sticky top-0
 }
+#level-2 div{
+    @apply -mb-0.5 justify-evenly 
+}
+#level-2 div p{
+    @apply w-96 items-end
+}
 #level-3{
     @apply sticky top-0
 }
@@ -62,8 +71,9 @@
     @apply bg-primary-light dark:bg-primary-dark text-white font-extrabold text-3xl p-4 drop-shadow-lg min-h-2.5 min-w-full text-center
 }
 .btn{
-    @apply block m-auto bg-primary-light dark:bg-primary-dark text-white font-semibold py-2 px-4 rounded-lg border-2 border-white h-1/2 w-1/4 transition-all duration-60 
+    @apply contrast-100 justify-between items-end m-auto bg-primary-light dark:bg-primary-dark text-white font-semibold rounded-lg border-2 border-white h-16 w-1/4 transition-all duration-60 
 }
+/* contrast-100 added to btn class in order to eliminate contrast errors that I detected using Wave Evaluation Tool extension */
 .btn:hover{
     @apply border-[#f5f5f5] active:bg-[#7036a2] shadow-md brightness-125 rounded-full scale-90
 }
