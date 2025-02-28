@@ -660,9 +660,9 @@
       line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
-  .lg\:-mb-0\.5 {
+  .lg\:my-2 {
     @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * -0.5);
+      margin-block: calc(var(--spacing) * 2);
     }
   }
   .lg\:w-3\/5 {
@@ -772,14 +772,10 @@
     width: calc(9/10 * 100%);
     text-align: center;
   }
-  section {
-    overflow-y: auto;
-  }
 }
 .level {
   display: block;
   min-height: 100vh;
-  overflow: auto;
   background-color: var(--color-primary-dark);
   padding: calc(var(--spacing) * 8);
   color: var(--color-black);
@@ -796,10 +792,15 @@
   top: calc(var(--spacing) * 0);
 }
 #level-2 div {
-  margin-bottom: calc(var(--spacing) * -0.5);
-  justify-content: space-evenly;
+  justify-content: space-around;
   @media (width >= 64rem) {
     margin: calc(var(--spacing) * -2);
+  }
+  @media (width >= 64rem) {
+    margin-right: calc(var(--spacing) * 0.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: calc(var(--spacing) * -1.5);
   }
 }
 #level-2 div p {
@@ -822,12 +823,16 @@
   top: calc(var(--spacing) * 0);
 }
 #form {
-  margin: auto;
+  margin-inline: auto;
+  margin-block: calc(var(--spacing) * 3);
   width: calc(1/2 * 100%);
   flex-direction: column;
   border-radius: var(--radius-2xl);
   background-color: var(--color-primary-light);
   padding-inline: calc(var(--spacing) * 1);
+  @media (width >= 48rem) {
+    margin-block: calc(var(--spacing) * 10);
+  }
   &:where(.dark, .dark *) {
     background-color: var(--color-primary-dark);
   }
